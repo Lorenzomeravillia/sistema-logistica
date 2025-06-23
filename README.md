@@ -1,6 +1,6 @@
 # Sistema di Gestione Logistica
 
-Questo repository contiene un sistema base per la gestione logistica scritto in Python. Il sistema include moduli per la gestione del magazzino e l'ottimizzazione dei percorsi di consegna.
+Questo repository contiene un sistema base per la gestione logistica scritto in Python. Il sistema include moduli per la gestione del magazzino e l'ottimizzazione dei percorsi di consegna. Entrambi i programmi dispongono di una semplice interfaccia grafica realizzata con Tkinter e possono essere avviati eseguendo direttamente i file `.py`.
 
 ## 📦 Contenuto del Repository
 
@@ -38,6 +38,10 @@ magazzino.aggiorna_quantita("PRD001", 20, "USCITA")
 # Genera report
 magazzino.report_inventario()
 ```
+E' inoltre possibile aprire l'interfaccia grafica eseguendo direttamente:
+```bash
+python gestione_magazzino.py
+```
 
 ### Ottimizzazione Percorsi
 ```python
@@ -52,6 +56,10 @@ ottimizzatore.aggiungi_consegna(consegna)
 
 # Ottimizza e dividi per veicoli
 veicoli = ottimizzatore.dividi_per_veicoli(500)
+```
+Per utilizzare la finestra grafica basta eseguire:
+```bash
+python ottimizzazione_percorsi.py
 ```
 
 ## 📊 Esempi di Output
